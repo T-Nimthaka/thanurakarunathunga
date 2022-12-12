@@ -106,7 +106,7 @@
     background-color: transparent;
     color: #e6f0e4;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: fantasy;
 }
 #pic {
@@ -119,7 +119,7 @@
     display: flex;
     flex-direction: column;
     text-align: justify;
-    margin-top: 15%;
+    margin-top: 10%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
     padding: 10px;
@@ -127,6 +127,9 @@
 #intro h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+}
+#dw {
+    font-size: 20px;
 }
 .cv {
     padding: 16px 35px;
@@ -160,9 +163,18 @@
     font-family: fantasy;
     margin-top: 4%;
 }
+
 .row {
+    position: relative;
     margin-top: 5%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+#para{
+    text-align: left;
+    font-size: 20px;
 }
 .box {
     text-align: center;
