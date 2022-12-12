@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px; 
+    transition: all .5s ease;
+}
+.navbar ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+/*home*/
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('pic1.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: fantasy;
+    font-size: 2rem;
+    top: 10%;
+    right: 50%;
+}
+.my{
+    display: flex;
+    flex-direction: column;
+    font-family: cursive;
+    font-size: 2rem;
+    color: bisque;
+    text-align: center;
+    top: 10%;
+    right: 50%;
+    margin-bottom: 20px;
+}
+.btn{
+    position: center;
+    display: flex;
+    border: 0.5px solid white;
+    color: rgb(250, 250, 250);
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    transition: 0.6s ease;
+}
+.btn :hover{
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+
+/* About Me */
+#about {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 13, 35);
+    color: whitesmoke;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+.heading {
+    background-color: transparent;
+    color: #e6f0e4;
+    text-align: center;
+    font-size: 2rem;
+    font-family: fantasy;
+}
+#pic {
+    display: flex;
+}
+#pic img {
+    width: 400px;
+}
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    padding: 10px;
+}
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cv {
+    padding: 16px 35px;
+    text-align: center;
+    text-decoration: double;
+    border: rgb(255, 181, 0) 1px solid;
+    border-radius: 35px;
+    letter-spacing: 2px;
+    color: aliceblue;
+    position: absolute;
+    margin: 24% 45%;
+}
+.cv :hover{
+    background-color:rgb(255, 181, 0);
+}
+
+/*portfolio*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: white;
+    padding: 60px;
+    margin-bottom: 100px;
+
+}
+.head2 {
+    color: #0d003b;
+    text-align: center;
+    font-size: 3rem;
+    font-family: fantasy;
+    margin-top: 4%;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+}
+.box {
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 2px solid white;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: black;
+    transition-property: all;
+
+}
+.row :hover{
+    background-size: 100% 200%;
+    transition: all 0.8s;
+    background-color: darkkhaki;    
+    color: black;
+}
+
+/*contact*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box ;
+    background-color: black;
+    color: antiquewhite;
+    margin-top: 10%;
+    padding: 20px;
+}
+.head{
+    margin-top: 2%;
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 20px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 30px white;
+}
+#methods ul{
+    display: flex;
+    list-style: none;
+    margin: .1px 0px;
+}
+#gmail{
+    margin-left: 0%;
+}
+#ig{
+    margin-left: 50%;
+}
+#ig img{
+    width: 50px;
+    height: 50px;
+}
+#wa{
+    margin-left: 100%;
+}
